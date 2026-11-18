@@ -1,0 +1,44 @@
+# Корневой файл конфигурации
+root = true
+
+# Общие настройки для всех файлов
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+# Python
+[*.py]
+indent_style = space
+indent_size = 4
+
+# JavaScript и TypeScript
+[*.{js,jsx,ts,tsx}]
+indent_style = space
+indent_size = 2
+
+# JSON и YAML
+[*.{json,yml,yaml}]
+indent_style = space
+indent_size = 2
+
+# HTML и CSS
+[*.{html,css,scss}]
+indent_style = space
+indent_size = 2
+
+# Markdown
+[*.md]
+trim_trailing_whitespace = false
+indent_size = 2
+
+# Dockerfile и Makefile
+[Dockerfile]
+indent_style = space
+indent_size = 4
+
+[Makefile]
+indent_style = tab
